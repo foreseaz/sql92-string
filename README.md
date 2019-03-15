@@ -1,4 +1,4 @@
-# sqlstring
+# sql92-string
 
 [![NPM Version][npm-version-image]][npm-url]
 [![NPM Downloads][npm-downloads-image]][npm-url]
@@ -6,12 +6,12 @@
 [![Build Status][travis-image]][travis-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 
-Simple SQL escape and format for MySQL
+Simple SQL escape and format for SQL92
 
 ## Install
 
 ```sh
-$ npm install sqlstring
+$ npm install sql92-string
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ $ npm install sqlstring
 <!-- eslint-disable no-unused-vars -->
 
 ```js
-var SqlString = require('sqlstring');
+var SqlString = require('sql92-string');
 ```
 
 ### Escaping query values
@@ -197,7 +197,7 @@ console.log(sql); // UPDATE `users` SET `email` = 'foobar@example.com', `modifie
 
 [npm-version-image]: https://img.shields.io/npm/v/sqlstring.svg
 [npm-downloads-image]: https://img.shields.io/npm/dm/sqlstring.svg
-[npm-url]: https://npmjs.org/package/sqlstring
+[npm-url]: https://npmjs.org/package/sql92-string
 [travis-image]: https://img.shields.io/travis/mysqljs/sqlstring/master.svg
 [travis-url]: https://travis-ci.org/mysqljs/sqlstring
 [coveralls-image]: https://img.shields.io/coveralls/mysqljs/sqlstring/master.svg

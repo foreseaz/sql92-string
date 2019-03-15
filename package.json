@@ -1,21 +1,23 @@
 {
-  "name": "sqlstring",
-  "description": "Simple SQL escape and format for MySQL",
-  "version": "2.3.1",
+  "name": "sql92-string",
+  "description": "Simple SQL escape and format for SQL-92",
+  "version": "1.0.0",
   "contributors": [
     "Adri Van Houdt <adri.van.houdt@gmail.com>",
     "Douglas Christopher Wilson <doug@somethingdoug.com>",
     "fengmk2 <fengmk2@gmail.com> (http://fengmk2.github.com)",
     "Kevin Jose Martin <kevin@tiliq.com>",
     "Nathan Woltman <nwoltman@outlook.com>",
-    "Sergej Sintschilin <seregpie@gmail.com>"
+    "Sergej Sintschilin <seregpie@gmail.com>",
+    "foreseaz <foreseazhang@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
     "sqlstring",
     "sql",
     "escape",
-    "sql escape"
+    "sql escape",
+    "sql92"
   ],
   "repository": "mysqljs/sqlstring",
   "devDependencies": {
