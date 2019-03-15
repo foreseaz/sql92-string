@@ -99,7 +99,7 @@ test('SqlString.escape', {
   },
 
   'nested objects use toString is quoted': function() {
-    assert.equal(SqlString.escape({a: { toString: function() { return "f'oo"; } }}), "`a` = 'f\\'oo'");
+    assert.equal(SqlString.escape({a: { toString: function() { return "f'oo"; } }}), "`a` = 'f''oo'");
   },
 
   'arrays are turned into lists': function() {
@@ -158,8 +158,8 @@ test('SqlString.escape', {
   },
 
   'single quotes get escaped': function() {
-    assert.equal(SqlString.escape('Sup\'er'), "'Sup\\'er'");
-    assert.equal(SqlString.escape('Super\''), "'Super\\''");
+    assert.equal(SqlString.escape('Sup\'er'), "'Sup''er'");
+    assert.equal(SqlString.escape('Super\''), "'Super'''");
   },
 
   'double quotes get escaped': function() {
@@ -234,7 +234,7 @@ test('SqlString.escape', {
     buffer.toString = function() { return "00' OR '1'='1"; };
     var string = SqlString.escape(buffer);
 
-    assert.strictEqual(string, "X'00\\' OR \\'1\\'=\\'1'");
+    assert.strictEqual(string, "X'00'' OR ''1''=''1'");
   },
 
   'NaN -> NaN': function() {
