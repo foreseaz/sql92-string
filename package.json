@@ -1,7 +1,8 @@
 {
   "name": "sql92-string",
   "description": "Simple SQL escape and format for SQL-92",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "types": "./lib/main.d.ts",
   "contributors": [
     "Adri Van Houdt <adri.van.houdt@gmail.com>",
     "Douglas Christopher Wilson <doug@somethingdoug.com>",
